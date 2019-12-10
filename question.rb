@@ -1,15 +1,10 @@
 class Question
 
-  attr_reader :answer, :question, :num1, :num2
+  attr_reader :num1, :num2
 
   def initialize
-    @num1 = rand(0...20)
-    @num2 = rand(0...20)
-  end
-
-  def numbers
-    self.num1 = rand(1...20)
-    self.num2 = rand(1...20)
+    @num1 = rand(1..20)
+    @num2 = rand(1..20)
   end
 
   def ask(player)
